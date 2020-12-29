@@ -52,6 +52,43 @@
     color: white;
   }
  
+
+  html {
+  box-sizing: border-box;
+}
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
   </style>
     <body>
         <header>
@@ -68,20 +105,68 @@
           <a href="Skills.html" class="headnow">Skills</a>
           <a href="Contact.html" class="headnow">Contact</a>
       </div>
+      <h2>Click on the cover images to download the books.</h2>
         </header>
+        <div class="container">
+          <a href="../books/Journey to the Center of the Earth.pdf" download="A Journey to the Center of the Earth">
+          <img src="../image/journey.jpg" alt="Jouney To the Center of the Earth" class="image">
+        </a>
+          <div class="overlay">Jouney To the Center of the Earth</div>
+        </div>
 
+        <div class="container">
+          <a href="../books/The ABC Murders.pdf" download="The ABC Murders">
+          <img src="../image/abc.jpg" alt="ABC Murders" class="image">
+          </a>
+          <div class="overlay">The ABC Murders</div>
+        </div>
+        <div class="container">
+          <a href="../books/Murder on the Orient Express.pdf" download="Murder on the Orient Express">
+          <img src="../image/orient_express.png" alt="Murder on the Orient Express" class="image">
+          </a>
+          <div class="overlay">Murder on the Orient Express</div>
+        </div>
+        <div class="container">
+          <a href="../books/Dumb Witness By Agatha Christie.pdf" download="Dumb Witness">
+          <img src="../image/dumb_witness.jfif" alt="Dumb Witness" class="image">
+          </a>
+          <div class="overlay">Dumb Witness</div>
+        </div>  
+        
+        <div class="container">
+          <a href="../books/Murder on the Links By Agatha Christie.pdf" download="Murder on the Links">
+          <img src="../image/links.jfif" alt="Murder on the Links" class="image">
+          </a>
+          <div class="overlay">Murder on the Links</div>
+        </div>  
+
+        <div class="container">
+          <a href="../books/The Mysterious Affair at Styles.pdf" download="The Mysterious Affair at Styles">
+          <img src="../image/affair_at_styles.jfif" alt="The Mysterious Affair at Styles" class="image">
+          </a>
+          <div class="overlay">The Mysterious Affair at Styles</div>
+        </div> 
+        
+        <div class="container">
+          <a href="../books/The Mystery of the Blue Train.pdf" download="The Mystery of the Blue Train">
+          <img src="../image/blue_train.jpeg" alt="The Mystery of the Blue Train" class="image">
+          </a>
+          <div class="overlay">The Mystery of the Blue Train</div>
+        </div> 
+
+        <!-- 
         <a href="../books/Biomedical Sensors and Measurement.pdf" download="Biomedical Sensors and Measurement">
           <img src="../image/biomedical.jfif"  alt="Biomedical sensors" width="104" height="142">
-        </a>
+        </a>-->
 
         <h2>Contact me</h2>
   
-        <!-- Add font awesome icons -->
+         
         <a href="https://www.facebook.com/shri.vidhatri" class="fa fa-facebook"></a>
         <a href="https://www.linkedin.com/in/m-m-shri-vidhatri-0695891a1/" class="fa fa-linkedin"></a>
         <a href="https://github.com/shrividhatri" class="fa fa-github"></a>
         <a href="https://www.instagram.com/mallika_shri/" class="fa fa-instagram"></a>
-  
+      
 
     </body>
 
